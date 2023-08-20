@@ -4,7 +4,7 @@ import PySilmpleGUI as sg
 
 class Gui:
     def __init__(self):
-        self.layout = [sg.Text('Search Term'), sg.Input()]
+        self.layout = [sg.Text('Search Term'), sg.Input(), sg.Radio('Contains',)]
         self.window = sg.Windows('File Search Engine').Layout(self.layout)
       
 class SearchEngine:
