@@ -32,5 +32,5 @@ class SearchEngine:
       self.matches = 0
       self.records = 0
       # perform search
-  
+      for path, files in self.file_index
       # save search results
