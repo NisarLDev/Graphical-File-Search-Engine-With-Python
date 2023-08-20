@@ -66,4 +66,5 @@ def test1():
     print('>> This query produced the following atches: \n')
     for match in s.results:
         print(match)
-test1()
+
+
