@@ -58,5 +58,7 @@ def test1():
 
     print()
     print('>> There were {:,d} matces out of {:,d} records searched.'.format(s.matches))
-
+    print('>> This query produced the following atches: \n')
+    for match in s.results:
+        print(match)
 test1()
