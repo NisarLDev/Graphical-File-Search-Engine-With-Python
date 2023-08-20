@@ -67,4 +67,8 @@ def test1():
     for match in s.results:
         print(match)
 
+def test2()
+    g = Gui()
+    g.window.Read()
 
+test2()
