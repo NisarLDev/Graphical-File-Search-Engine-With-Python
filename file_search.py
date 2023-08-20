@@ -10,7 +10,7 @@ class SearchEngine:
 
   def create_new_index(self, root_path):
       ''' create a new index and save to file '''
-      pass
+      self.file.index = [(root, files) for root, dirs, files in os.walk(root_path) if files]
 
   def load_existing_index(self):
       ''' load existing index '''
