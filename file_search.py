@@ -46,3 +46,17 @@ class SearchEngine:
                 continue
                 
       # save search results
+      with open('search_results.txt','w') as f:
+          for row in self.results:
+              f.write(row + '\n')
+
+
+def test1():
+    s = SearchEngine()
+    s.create_new_index('C:/')
+    s.search('gecko')
+
+    print()
+    print('>> There were {:,d} matces out of {:,d} records searched.'.format(s.matches))
+
+test1()
