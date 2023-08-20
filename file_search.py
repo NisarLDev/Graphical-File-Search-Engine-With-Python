@@ -10,4 +10,12 @@ class SearchEngine:
 
   def create_new_index(self, root_path):
       ''' create a new index and save to file '''
-    
+      pass
+
+  def load_existing_index(self):
+      ''' load existing index '''
+
+  def search(self, term, search_type = 'contains'):
+      ''' search for term based on search type '''
+      pass
+  
