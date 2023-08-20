@@ -35,4 +35,6 @@ class SearchEngine:
       for path, files in self.file_index:
           for file in files:
               self.records +=1
+              if (search_type == 'contains' and term.lower() in file.lower() or 
+                  search_type == 'startswith' and file.lower().startswith(term.lower()))
       # save search results
