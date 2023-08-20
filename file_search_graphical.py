@@ -3,7 +3,7 @@ import pickle
 
 class Gui:
     def __init__(self):
-        self.layout = ''
+        self.layout = [sg.Text('Search Term'), sg.Input()]
         self.window = sg.Windows('File Search Engine').Layout(self.layout)
       
 class SearchEngine:
