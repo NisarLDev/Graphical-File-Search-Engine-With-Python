@@ -17,7 +17,12 @@ class SearchEngine:
         
   def load_existing_index(self):
       ''' load existing index '''
-
+      try:
+          with open('file_index.pkl','rb') as f:
+              self.file_index = pickle.load(f)
+      except:
+          self.file_index = []
+        
   def search(self, term, search_type = 'contains'):
       ''' search for term based on search type '''
       pass
