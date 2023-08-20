@@ -36,5 +36,6 @@ class SearchEngine:
           for file in files:
               self.records +=1
               if (search_type == 'contains' and term.lower() in file.lower() or 
-                  search_type == 'startswith' and file.lower().startswith(term.lower()))
+                  search_type == 'startswith' and file.lower().startswith(term.lower()) or
+                  search_type == 'endwith' andfile.lower().endwith(term.lower())):
       # save search results
