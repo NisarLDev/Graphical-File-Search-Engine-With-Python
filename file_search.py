@@ -13,7 +13,8 @@ class SearchEngine:
       self.file.index = [(root, files) for root, dirs, files in os.walk(root_path) if files]
       # save to file
       with open('file_index.pkl','wb') as f:
-    
+          pickel.dump(self.file_index, f)
+        
   def load_existing_index(self):
       ''' load existing index '''
 
