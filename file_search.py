@@ -28,7 +28,9 @@ class SearchEngine:
 
 
       # reset variables
-
+      self.results.clear()
+      self.matches = 0
+      self.records = 0
       # perform search
   
       # save search results
