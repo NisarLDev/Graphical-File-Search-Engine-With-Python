@@ -25,5 +25,10 @@ class SearchEngine:
         
   def search(self, term, search_type = 'contains'):
       ''' search for term based on search type '''
-      pass
+
+
+      # reset variables
+
+      # perform search
   
+      # save search results
